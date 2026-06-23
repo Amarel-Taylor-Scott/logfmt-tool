@@ -1,0 +1,6 @@
+level=info msg="server started" port=8080 ok
+level=info msg="request handled" method=GET path=/health status=200 elapsed_ms=1.2
+level=warn msg="slow query" path=/users status=200 elapsed_ms=812.4
+level=error msg="db connection failed" status=500 retry=3
+level=info msg="request handled" method=POST path=/users status=201 elapsed_ms=42.0
+level=error msg="unhandled exception" status=500 path=/checkout
