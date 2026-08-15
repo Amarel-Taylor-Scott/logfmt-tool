@@ -1,0 +1,120 @@
+[
+  {
+    "inputs": {
+      "records": [
+        {
+          "level": "info",
+          "msg": "user logged in",
+          "user_id": "42",
+          "ok": true,
+          "elapsed_ms": "12.5"
+        },
+        {
+          "level": "error",
+          "msg": "boom",
+          "status": "500"
+        },
+        {
+          "level": "info",
+          "status": "200"
+        }
+      ]
+    },
+    "parameters": {
+      "top": 3
+    },
+    "expect": {
+      "records": 3,
+      "keys": {
+        "elapsed_ms": {
+          "present": 1,
+          "present_pct": 33.3,
+          "distinct": 1,
+          "top": [
+            [
+              "12.5",
+              1
+            ]
+          ]
+        },
+        "level": {
+          "present": 3,
+          "present_pct": 100.0,
+          "distinct": 2,
+          "top": [
+            [
+              "info",
+              2
+            ],
+            [
+              "error",
+              1
+            ]
+          ]
+        },
+        "msg": {
+          "present": 2,
+          "present_pct": 66.7,
+          "distinct": 2,
+          "top": [
+            [
+              "user logged in",
+              1
+            ],
+            [
+              "boom",
+              1
+            ]
+          ]
+        },
+        "ok": {
+          "present": 1,
+          "present_pct": 33.3,
+          "distinct": 1,
+          "top": [
+            [
+              "True",
+              1
+            ]
+          ]
+        },
+        "status": {
+          "present": 2,
+          "present_pct": 66.7,
+          "distinct": 2,
+          "top": [
+            [
+              "500",
+              1
+            ],
+            [
+              "200",
+              1
+            ]
+          ]
+        },
+        "user_id": {
+          "present": 1,
+          "present_pct": 33.3,
+          "distinct": 1,
+          "top": [
+            [
+              "42",
+              1
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "inputs": {
+      "records": []
+    },
+    "parameters": {},
+    "expect": {
+      "records": 0,
+      "keys": {}
+    }
+  }
+]

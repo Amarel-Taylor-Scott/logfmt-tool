@@ -1,0 +1,62 @@
+{
+  "actions": [
+    "logs.filter-records"
+  ],
+  "aliases": [
+    "logs filter records"
+  ],
+  "discovery_version": "0.1",
+  "documents": [
+    {
+      "extensions": {},
+      "id": "document.amarel.logfmttool.filter-records",
+      "language": "und",
+      "source_digest": "sha256:b1609b1538e4f3bcbb237a1d625112494ca310811146b75f54b027a276fb2fc6",
+      "targets": [
+        "node",
+        "inputs",
+        "outputs"
+      ],
+      "text": "Keep records matching one transparent key=value, comparison, or existence expression. Generated from the published repository https://github.com/Amarel-Taylor-Scott/logfmt-tool by nodepacker."
+    }
+  ],
+  "domains": [
+    "amarel.portfolio"
+  ],
+  "extensions": {
+    "amarel.maturity": "published",
+    "amarel.source-repo": "https://github.com/Amarel-Taylor-Scott/logfmt-tool"
+  },
+  "node_id": "amarel.logfmttool.filter-records",
+  "node_spec_digest": "sha256:b1609b1538e4f3bcbb237a1d625112494ca310811146b75f54b027a276fb2fc6",
+  "node_version": "1.0.0",
+  "ports": [
+    {
+      "concepts": [],
+      "description": "Records to filter.",
+      "direction": "input",
+      "examples": [],
+      "port_name": "records"
+    },
+    {
+      "concepts": [],
+      "description": "Records satisfying the expression.",
+      "direction": "output",
+      "examples": [],
+      "port_name": "records"
+    }
+  ],
+  "purposes": [
+    "Keep records matching one transparent key=value, comparison, or existence expression."
+  ],
+  "solutions": [
+    "Reuse this published portfolio primitive inside a typed solution graph."
+  ],
+  "summary": "Keep records matching one transparent key=value, comparison, or existence expression.",
+  "tags": [
+    "license.mit",
+    "runtime.python",
+    "dependency-free"
+  ],
+  "title": "Filter Records"
+}

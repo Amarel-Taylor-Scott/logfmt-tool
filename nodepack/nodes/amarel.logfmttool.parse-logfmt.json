@@ -1,0 +1,54 @@
+{
+  "capabilities": [
+    "logs.parse-logfmt"
+  ],
+  "description": "Parse logfmt key=value log lines into structured records.",
+  "determinism": "deterministic",
+  "effects": [],
+  "entrypoint": "logfmt_tool.ung_nodes:parse_logfmt",
+  "failure_modes": [],
+  "id": "amarel.logfmttool.parse-logfmt",
+  "idempotency": "idempotent",
+  "implementation_digest": "sha256:70a70300565027ce3e588c53dd044f903bdf235aae33cbe5908c8dfed2938345",
+  "inputs": [
+    {
+      "cardinality": "one",
+      "description": "Raw log text, one logfmt line per record.",
+      "name": "text",
+      "type": {
+        "id": "amarel.text",
+        "media_type": "application/json",
+        "schema_digest": "",
+        "units": "",
+        "version": "1"
+      }
+    }
+  ],
+  "invariants": [],
+  "model_version": "0.2",
+  "outputs": [
+    {
+      "cardinality": "one",
+      "description": "Parsed records; bare keys become true flags.",
+      "name": "records",
+      "type": {
+        "id": "amarel.records",
+        "media_type": "application/json",
+        "schema_digest": "",
+        "units": "",
+        "version": "1"
+      }
+    }
+  ],
+  "parameters": [],
+  "permissions": [],
+  "postconditions": [
+    "blank lines are skipped; duplicate keys keep the last value"
+  ],
+  "preconditions": [],
+  "resources": [],
+  "runtime": "python",
+  "source": "logfmt_tool/ung_nodes.py",
+  "verifier": "",
+  "version": "1.0.0"
+}

@@ -1,0 +1,163 @@
+{
+  "admission_model_version": "0.1",
+  "all_admitted": true,
+  "candidate_total": 8,
+  "decision_total": 40,
+  "harness": {
+    "id": "harness.nodepacker",
+    "version": "0.1.0"
+  },
+  "node_count": 5,
+  "nodes": [
+    {
+      "admitted": true,
+      "admitted_candidates": [
+        "candidate.amarel.logfmttool.parse-logfmt.default"
+      ],
+      "admitted_space_digest": "sha256:f073736d56410155d2345a19e802b6d3816c15e84ca02f264a6f6c21ecdb52d7",
+      "decisions_examined": 8,
+      "foreign_rejection_count": 7,
+      "foreign_rejection_reasons": [
+        "implementation requires undeclared inputs: records",
+        "missing capabilities: logs.parse-logfmt",
+        "missing input port text",
+        "missing output port records"
+      ],
+      "node_id": "amarel.logfmttool.parse-logfmt",
+      "node_spec_digest": "sha256:833e8ea3d853cd367525e56a03665907896b09915b7c76a338873b14631ee4df",
+      "node_version": "1.0.0",
+      "own_candidates": [
+        "candidate.amarel.logfmttool.parse-logfmt.default"
+      ],
+      "own_rejections": [],
+      "slot_capabilities": [
+        "logs.parse-logfmt"
+      ],
+      "template_digest": "sha256:3570c201bee5c14bc5eb1ea3837e97d3f7829cc6dee68b334d33c80b04ca0fe4",
+      "template_id": "template.amarel.logfmttool.parse-logfmt"
+    },
+    {
+      "admitted": true,
+      "admitted_candidates": [
+        "candidate.amarel.logfmttool.format-logfmt.default"
+      ],
+      "admitted_space_digest": "sha256:ed4560110c1911483d6e08db8a47b245a8e8b91096f6b2652e837530126edabe",
+      "decisions_examined": 8,
+      "foreign_rejection_count": 7,
+      "foreign_rejection_reasons": [
+        "implementation requires undeclared inputs: text",
+        "missing capabilities: logs.format-logfmt",
+        "missing input port records",
+        "missing output port text"
+      ],
+      "node_id": "amarel.logfmttool.format-logfmt",
+      "node_spec_digest": "sha256:2e9942a04b7dca73c60eda5d15b1220eb324f9046501f273a26523409a262709",
+      "node_version": "1.0.0",
+      "own_candidates": [
+        "candidate.amarel.logfmttool.format-logfmt.default"
+      ],
+      "own_rejections": [],
+      "slot_capabilities": [
+        "logs.format-logfmt"
+      ],
+      "template_digest": "sha256:3b34230660d46bdbee26e0339cc1d74758b199b15483bbeccb852bf620651f6e",
+      "template_id": "template.amarel.logfmttool.format-logfmt"
+    },
+    {
+      "admitted": true,
+      "admitted_candidates": [
+        "candidate.amarel.logfmttool.filter-records.level-error",
+        "candidate.amarel.logfmttool.filter-records.status-ge-500"
+      ],
+      "admitted_space_digest": "sha256:ff4531457d4725839ac551613cf74813be77f42d2f56bc920d63d6dd6560ea33",
+      "decisions_examined": 8,
+      "foreign_rejection_count": 6,
+      "foreign_rejection_reasons": [
+        "implementation requires undeclared inputs: text",
+        "missing capabilities: logs.filter-records",
+        "missing input port records",
+        "missing output port records"
+      ],
+      "node_id": "amarel.logfmttool.filter-records",
+      "node_spec_digest": "sha256:b1609b1538e4f3bcbb237a1d625112494ca310811146b75f54b027a276fb2fc6",
+      "node_version": "1.0.0",
+      "own_candidates": [
+        "candidate.amarel.logfmttool.filter-records.level-error",
+        "candidate.amarel.logfmttool.filter-records.status-ge-500"
+      ],
+      "own_rejections": [],
+      "slot_capabilities": [
+        "logs.filter-records"
+      ],
+      "template_digest": "sha256:62e8d28260c5a0cc1e5ef208da2770d30391d50095c6de019d6553d0d2a38339",
+      "template_id": "template.amarel.logfmttool.filter-records"
+    },
+    {
+      "admitted": true,
+      "admitted_candidates": [
+        "candidate.amarel.logfmttool.select-keys.level-msg",
+        "candidate.amarel.logfmttool.select-keys.timing"
+      ],
+      "admitted_space_digest": "sha256:ae42e993fe120c6e1fcac38f62a0152f64cfe87ec8232b1fd934cbfff0b5a01e",
+      "decisions_examined": 8,
+      "foreign_rejection_count": 6,
+      "foreign_rejection_reasons": [
+        "implementation requires undeclared inputs: text",
+        "missing capabilities: logs.project-keys",
+        "missing input port records",
+        "missing output port records"
+      ],
+      "node_id": "amarel.logfmttool.select-keys",
+      "node_spec_digest": "sha256:d8dc58c5f8a7155f78e4845c87acd38bc20e9457d3a85eadb5394d3fd1cb7041",
+      "node_version": "1.0.0",
+      "own_candidates": [
+        "candidate.amarel.logfmttool.select-keys.level-msg",
+        "candidate.amarel.logfmttool.select-keys.timing"
+      ],
+      "own_rejections": [],
+      "slot_capabilities": [
+        "logs.project-keys"
+      ],
+      "template_digest": "sha256:3d28f995c9119534c55ededd7421219b8b19d6463fbc73706a264736e14e3e50",
+      "template_id": "template.amarel.logfmttool.select-keys"
+    },
+    {
+      "admitted": true,
+      "admitted_candidates": [
+        "candidate.amarel.logfmttool.profile-records.top-3-79649b007522",
+        "candidate.amarel.logfmttool.profile-records.top-5-1e5130a477c9"
+      ],
+      "admitted_space_digest": "sha256:ac4194ea7a887401fffc1b2359762dbb12408ad98e47479b4886cca45c44ab7a",
+      "decisions_examined": 8,
+      "foreign_rejection_count": 6,
+      "foreign_rejection_reasons": [
+        "implementation requires undeclared inputs: text",
+        "missing capabilities: logs.profile-records",
+        "missing input port records",
+        "missing output port report"
+      ],
+      "node_id": "amarel.logfmttool.profile-records",
+      "node_spec_digest": "sha256:f9d4eef1a2cf0b9666212ec11cd5e260d3d27e9254e05e4a57eb7caf9174ada4",
+      "node_version": "1.0.0",
+      "own_candidates": [
+        "candidate.amarel.logfmttool.profile-records.top-3-79649b007522",
+        "candidate.amarel.logfmttool.profile-records.top-5-1e5130a477c9"
+      ],
+      "own_rejections": [],
+      "slot_capabilities": [
+        "logs.profile-records"
+      ],
+      "template_digest": "sha256:382f6a8949d3faa234c1aae8de49826c7108b824228fc76db1803dfc314de381",
+      "template_id": "template.amarel.logfmttool.profile-records"
+    }
+  ],
+  "pack_id": "amarel.logfmttool-node-pack",
+  "pack_version": "0.1.0",
+  "query_digest": "sha256:04a163e38faf42e25b91099c54857a275f9033d6e09617e5048d340173823005",
+  "receipt_digest": "sha256:65c50397cdbd975d7827a132d33e3df62aa5d93c97374cc2c9ca12be8152ffea",
+  "registry_digest": "sha256:868573679ef3696c79fc61f576f91624674c09aaf00b1880619fadc4006a3b9b",
+  "registry_id": "registry.amarel.logfmttool",
+  "session_digest": "sha256:62e28392965b4f7c5ee7bc9129720628f7f0a350081ce1282db8ed49e35aed63",
+  "session_warnings": [],
+  "snapshot_digest": "sha256:a91cdb47968103a312fa017369f8f190c7de3021a514638e198cb089d7c22287"
+}

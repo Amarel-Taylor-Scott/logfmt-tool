@@ -1,0 +1,79 @@
+[
+  {
+    "inputs": {
+      "records": [
+        {
+          "level": "info",
+          "msg": "user logged in",
+          "user_id": "42",
+          "ok": true,
+          "elapsed_ms": "12.5"
+        },
+        {
+          "level": "error",
+          "msg": "boom",
+          "status": "500"
+        },
+        {
+          "level": "info",
+          "status": "200"
+        }
+      ]
+    },
+    "parameters": {
+      "keys": [
+        "level",
+        "msg"
+      ]
+    },
+    "expect": [
+      {
+        "level": "info",
+        "msg": "user logged in"
+      },
+      {
+        "level": "error",
+        "msg": "boom"
+      },
+      {
+        "level": "info"
+      }
+    ]
+  },
+  {
+    "inputs": {
+      "records": [
+        {
+          "level": "info",
+          "msg": "user logged in",
+          "user_id": "42",
+          "ok": true,
+          "elapsed_ms": "12.5"
+        },
+        {
+          "level": "error",
+          "msg": "boom",
+          "status": "500"
+        },
+        {
+          "level": "info",
+          "status": "200"
+        }
+      ]
+    },
+    "parameters": {
+      "keys": [
+        "status"
+      ]
+    },
+    "expect": [
+      {},
+      {
+        "status": "500"
+      },
+      {
+        "status": "200"
+      }
+    ]
+  }
+]

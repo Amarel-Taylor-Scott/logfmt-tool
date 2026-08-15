@@ -1,0 +1,77 @@
+{
+  "artifacts": [
+    {
+      "annotations": {
+        "org.opencontainers.image.title": "logfmt_tool.ung_nodes:parse_logfmt"
+      },
+      "digest": "sha256:70a70300565027ce3e588c53dd044f903bdf235aae33cbe5908c8dfed2938345",
+      "media_type": "text/x-python",
+      "name": "artifact.amarel.logfmttool.parse-logfmt",
+      "uri": "python://logfmt_tool.ung_nodes:parse_logfmt"
+    },
+    {
+      "annotations": {
+        "org.opencontainers.image.title": "logfmt_tool.ung_nodes:format_logfmt"
+      },
+      "digest": "sha256:8cd7941d8a6054ecb784ca209518f2b5a007c99522c26e3a46ed93fd18ae61e6",
+      "media_type": "text/x-python",
+      "name": "artifact.amarel.logfmttool.format-logfmt",
+      "uri": "python://logfmt_tool.ung_nodes:format_logfmt"
+    },
+    {
+      "annotations": {
+        "org.opencontainers.image.title": "logfmt_tool.ung_nodes:filter_logfmt_records"
+      },
+      "digest": "sha256:1a6dc4adde0b896db1d2a64a80d67daad9629f49e51ced7e6aaa7ca59aaccbc3",
+      "media_type": "text/x-python",
+      "name": "artifact.amarel.logfmttool.filter-records",
+      "uri": "python://logfmt_tool.ung_nodes:filter_logfmt_records"
+    },
+    {
+      "annotations": {
+        "org.opencontainers.image.title": "logfmt_tool.ung_nodes:select_keys"
+      },
+      "digest": "sha256:0b744e681b28009da59d1c7cdaaeb852442d580c92b794e6bd797ab280db0a6a",
+      "media_type": "text/x-python",
+      "name": "artifact.amarel.logfmttool.select-keys",
+      "uri": "python://logfmt_tool.ung_nodes:select_keys"
+    },
+    {
+      "annotations": {
+        "org.opencontainers.image.title": "logfmt_tool.ung_nodes:profile_records"
+      },
+      "digest": "sha256:6a35ee092e852b92a164ca9efd92d7922a7ced5b55eb398843ba385acfaeb744",
+      "media_type": "text/x-python",
+      "name": "artifact.amarel.logfmttool.profile-records",
+      "uri": "python://logfmt_tool.ung_nodes:profile_records"
+    }
+  ],
+  "dependencies": [],
+  "description": "UNG node pack generated from the logfmt-tool repository's ung_nodes adapter registry (5 nodes, 8 explicit candidates).",
+  "descriptor_digests": [
+    "sha256:7ffa15fda5465a816b1f5002fc2fa7ddefd9928851095b81817d1c1fa449e38a",
+    "sha256:9bd4c79a6bb22a31db30bbaefd853c5d6a4ad4648d1ff6c5204027690356e44e",
+    "sha256:0d001c1d9750d07424a5b783f31d63163f57ed72633d086c0c2bb5b798724b69",
+    "sha256:cc7567448108c8b3e9b5e2fba2df509a033cce6e964653154a363e88a63ffcad",
+    "sha256:ceae184fac76e3d3366faca7aeb4d440e8ef11274b6467134ead808aec9284e8"
+  ],
+  "discovery_version": "0.1",
+  "embedding_record_digests": [],
+  "extensions": {
+    "amarel.adapter-spec": "ADAPTER_SPEC.md",
+    "amarel.generator": "nodepacker",
+    "amarel.maturity": "published",
+    "amarel.source-repo": "https://github.com/Amarel-Taylor-Scott/logfmt-tool"
+  },
+  "id": "amarel.logfmttool-node-pack",
+  "license": "MIT",
+  "node_spec_digests": [
+    "sha256:833e8ea3d853cd367525e56a03665907896b09915b7c76a338873b14631ee4df",
+    "sha256:2e9942a04b7dca73c60eda5d15b1220eb324f9046501f273a26523409a262709",
+    "sha256:b1609b1538e4f3bcbb237a1d625112494ca310811146b75f54b027a276fb2fc6",
+    "sha256:d8dc58c5f8a7155f78e4845c87acd38bc20e9457d3a85eadb5394d3fd1cb7041",
+    "sha256:f9d4eef1a2cf0b9666212ec11cd5e260d3d27e9254e05e4a57eb7caf9174ada4"
+  ],
+  "source": "https://github.com/Amarel-Taylor-Scott/logfmt-tool",
+  "version": "0.1.0"
+}

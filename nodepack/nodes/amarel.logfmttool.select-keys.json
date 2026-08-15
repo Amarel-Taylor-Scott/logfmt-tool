@@ -1,0 +1,61 @@
+{
+  "capabilities": [
+    "logs.project-keys"
+  ],
+  "description": "Project each record onto an explicit key list.",
+  "determinism": "deterministic",
+  "effects": [],
+  "entrypoint": "logfmt_tool.ung_nodes:select_keys",
+  "failure_modes": [],
+  "id": "amarel.logfmttool.select-keys",
+  "idempotency": "idempotent",
+  "implementation_digest": "sha256:0b744e681b28009da59d1c7cdaaeb852442d580c92b794e6bd797ab280db0a6a",
+  "inputs": [
+    {
+      "cardinality": "one",
+      "description": "Records to project.",
+      "name": "records",
+      "type": {
+        "id": "amarel.records",
+        "media_type": "application/json",
+        "schema_digest": "",
+        "units": "",
+        "version": "1"
+      }
+    }
+  ],
+  "invariants": [],
+  "model_version": "0.2",
+  "outputs": [
+    {
+      "cardinality": "one",
+      "description": "Projected records; absent keys are simply omitted.",
+      "name": "records",
+      "type": {
+        "id": "amarel.records",
+        "media_type": "application/json",
+        "schema_digest": "",
+        "units": "",
+        "version": "1"
+      }
+    }
+  ],
+  "parameters": [
+    {
+      "choices": [],
+      "default": null,
+      "description": "Keys to keep, in output order.",
+      "name": "keys",
+      "required": true,
+      "value_type": "array[string]"
+    }
+  ],
+  "permissions": [],
+  "postconditions": [],
+  "preconditions": [],
+  "resources": [],
+  "runtime": "python",
+  "source": "logfmt_tool/ung_nodes.py",
+  "verifier": "",
+  "version": "1.0.0"
+}

@@ -1,0 +1,62 @@
+{
+  "actions": [
+    "logs.parse-logfmt"
+  ],
+  "aliases": [
+    "logs parse logfmt"
+  ],
+  "discovery_version": "0.1",
+  "documents": [
+    {
+      "extensions": {},
+      "id": "document.amarel.logfmttool.parse-logfmt",
+      "language": "und",
+      "source_digest": "sha256:833e8ea3d853cd367525e56a03665907896b09915b7c76a338873b14631ee4df",
+      "targets": [
+        "node",
+        "inputs",
+        "outputs"
+      ],
+      "text": "Parse logfmt key=value log lines into structured records. Generated from the published repository https://github.com/Amarel-Taylor-Scott/logfmt-tool by nodepacker."
+    }
+  ],
+  "domains": [
+    "amarel.portfolio"
+  ],
+  "extensions": {
+    "amarel.maturity": "published",
+    "amarel.source-repo": "https://github.com/Amarel-Taylor-Scott/logfmt-tool"
+  },
+  "node_id": "amarel.logfmttool.parse-logfmt",
+  "node_spec_digest": "sha256:833e8ea3d853cd367525e56a03665907896b09915b7c76a338873b14631ee4df",
+  "node_version": "1.0.0",
+  "ports": [
+    {
+      "concepts": [],
+      "description": "Raw log text, one logfmt line per record.",
+      "direction": "input",
+      "examples": [],
+      "port_name": "text"
+    },
+    {
+      "concepts": [],
+      "description": "Parsed records; bare keys become true flags.",
+      "direction": "output",
+      "examples": [],
+      "port_name": "records"
+    }
+  ],
+  "purposes": [
+    "Parse logfmt key=value log lines into structured records."
+  ],
+  "solutions": [
+    "Reuse this published portfolio primitive inside a typed solution graph."
+  ],
+  "summary": "Parse logfmt key=value log lines into structured records.",
+  "tags": [
+    "license.mit",
+    "runtime.python",
+    "dependency-free"
+  ],
+  "title": "Parse Logfmt"
+}

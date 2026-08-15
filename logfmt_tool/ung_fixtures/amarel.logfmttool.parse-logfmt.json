@@ -1,0 +1,39 @@
+[
+  {
+    "inputs": {
+      "text": "level=info msg=\"user logged in\" user_id=42 ok elapsed_ms=12.5\nlevel=error msg=\"boom\" status=500\n\nlevel=info status=200"
+    },
+    "parameters": {},
+    "expect": [
+      {
+        "level": "info",
+        "msg": "user logged in",
+        "user_id": "42",
+        "ok": true,
+        "elapsed_ms": "12.5"
+      },
+      {
+        "level": "error",
+        "msg": "boom",
+        "status": "500"
+      },
+      {
+        "level": "info",
+        "status": "200"
+      }
+    ]
+  },
+  {
+    "inputs": {
+      "text": "k=\"a \\\"quoted\\\" v\" empty= flag"
+    },
+    "parameters": {},
+    "expect": [
+      {
+        "k": "a \"quoted\" v",
+        "empty": "",
+        "flag": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "actions": [
+    "logs.format-logfmt"
+  ],
+  "aliases": [
+    "logs format logfmt"
+  ],
+  "discovery_version": "0.1",
+  "documents": [
+    {
+      "extensions": {},
+      "id": "document.amarel.logfmttool.format-logfmt",
+      "language": "und",
+      "source_digest": "sha256:2e9942a04b7dca73c60eda5d15b1220eb324f9046501f273a26523409a262709",
+      "targets": [
+        "node",
+        "inputs",
+        "outputs"
+      ],
+      "text": "Serialize structured records back to logfmt lines. Generated from the published repository https://github.com/Amarel-Taylor-Scott/logfmt-tool by nodepacker."
+    }
+  ],
+  "domains": [
+    "amarel.portfolio"
+  ],
+  "extensions": {
+    "amarel.maturity": "published",
+    "amarel.source-repo": "https://github.com/Amarel-Taylor-Scott/logfmt-tool"
+  },
+  "node_id": "amarel.logfmttool.format-logfmt",
+  "node_spec_digest": "sha256:2e9942a04b7dca73c60eda5d15b1220eb324f9046501f273a26523409a262709",
+  "node_version": "1.0.0",
+  "ports": [
+    {
+      "concepts": [],
+      "description": "Records to serialize, key order preserved.",
+      "direction": "input",
+      "examples": [],
+      "port_name": "records"
+    },
+    {
+      "concepts": [],
+      "description": "One logfmt line per record.",
+      "direction": "output",
+      "examples": [],
+      "port_name": "text"
+    }
+  ],
+  "purposes": [
+    "Serialize structured records back to logfmt lines."
+  ],
+  "solutions": [
+    "Reuse this published portfolio primitive inside a typed solution graph."
+  ],
+  "summary": "Serialize structured records back to logfmt lines.",
+  "tags": [
+    "license.mit",
+    "runtime.python",
+    "dependency-free"
+  ],
+  "title": "Format Logfmt"
+}

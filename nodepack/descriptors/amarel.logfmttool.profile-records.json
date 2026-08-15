@@ -1,0 +1,62 @@
+{
+  "actions": [
+    "logs.profile-records"
+  ],
+  "aliases": [
+    "logs profile records"
+  ],
+  "discovery_version": "0.1",
+  "documents": [
+    {
+      "extensions": {},
+      "id": "document.amarel.logfmttool.profile-records",
+      "language": "und",
+      "source_digest": "sha256:f9d4eef1a2cf0b9666212ec11cd5e260d3d27e9254e05e4a57eb7caf9174ada4",
+      "targets": [
+        "node",
+        "inputs",
+        "outputs"
+      ],
+      "text": "Profile key presence, distinct counts, and top values across records. Generated from the published repository https://github.com/Amarel-Taylor-Scott/logfmt-tool by nodepacker."
+    }
+  ],
+  "domains": [
+    "amarel.portfolio"
+  ],
+  "extensions": {
+    "amarel.maturity": "published",
+    "amarel.source-repo": "https://github.com/Amarel-Taylor-Scott/logfmt-tool"
+  },
+  "node_id": "amarel.logfmttool.profile-records",
+  "node_spec_digest": "sha256:f9d4eef1a2cf0b9666212ec11cd5e260d3d27e9254e05e4a57eb7caf9174ada4",
+  "node_version": "1.0.0",
+  "ports": [
+    {
+      "concepts": [],
+      "description": "Records to profile.",
+      "direction": "input",
+      "examples": [],
+      "port_name": "records"
+    },
+    {
+      "concepts": [],
+      "description": "Per-key presence, percentage, distinct, and top values.",
+      "direction": "output",
+      "examples": [],
+      "port_name": "report"
+    }
+  ],
+  "purposes": [
+    "Profile key presence, distinct counts, and top values across records."
+  ],
+  "solutions": [
+    "Reuse this published portfolio primitive inside a typed solution graph."
+  ],
+  "summary": "Profile key presence, distinct counts, and top values across records.",
+  "tags": [
+    "license.mit",
+    "runtime.python",
+    "dependency-free"
+  ],
+  "title": "Profile Records"
+}

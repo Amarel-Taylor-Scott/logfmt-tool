@@ -1,0 +1,52 @@
+{
+  "capabilities": [
+    "logs.format-logfmt"
+  ],
+  "description": "Serialize structured records back to logfmt lines.",
+  "determinism": "deterministic",
+  "effects": [],
+  "entrypoint": "logfmt_tool.ung_nodes:format_logfmt",
+  "failure_modes": [],
+  "id": "amarel.logfmttool.format-logfmt",
+  "idempotency": "idempotent",
+  "implementation_digest": "sha256:8cd7941d8a6054ecb784ca209518f2b5a007c99522c26e3a46ed93fd18ae61e6",
+  "inputs": [
+    {
+      "cardinality": "one",
+      "description": "Records to serialize, key order preserved.",
+      "name": "records",
+      "type": {
+        "id": "amarel.records",
+        "media_type": "application/json",
+        "schema_digest": "",
+        "units": "",
+        "version": "1"
+      }
+    }
+  ],
+  "invariants": [],
+  "model_version": "0.2",
+  "outputs": [
+    {
+      "cardinality": "one",
+      "description": "One logfmt line per record.",
+      "name": "text",
+      "type": {
+        "id": "amarel.text",
+        "media_type": "application/json",
+        "schema_digest": "",
+        "units": "",
+        "version": "1"
+      }
+    }
+  ],
+  "parameters": [],
+  "permissions": [],
+  "postconditions": [],
+  "preconditions": [],
+  "resources": [],
+  "runtime": "python",
+  "source": "logfmt_tool/ung_nodes.py",
+  "verifier": "",
+  "version": "1.0.0"
+}
